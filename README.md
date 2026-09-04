@@ -1,4 +1,4 @@
-Copyright © 2026 re:3D, Inc. All rights reserved.
+Copyright © 2026 Mitchell Mashburn All rights reserved.
 Source files are made publicly available for review, education, and evaluation. No permission is granted for commercial manufacture, redistribution, or derivative works without written authorization.
 
 # Extrusion-Metrology
