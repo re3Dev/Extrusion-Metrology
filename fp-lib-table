@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "LineSensor") (type "KiCad") (uri "${KIPRJMOD}/LineSensor.pretty") (options "") (descr ""))
+)
