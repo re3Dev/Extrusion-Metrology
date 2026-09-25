@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/CMakeFiles/picotoolBuild
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/CMakeFiles/picotoolBuild.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/CMakeFiles/picotoolBuild-complete.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

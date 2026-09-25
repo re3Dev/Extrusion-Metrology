@@ -1,0 +1,5 @@
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm-install/pioasm/pioasm.exe
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm-install/pioasm/pioasmTargets.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm-install/pioasm/pioasmTargets-release.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm-install/pioasm/pioasmConfig.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm-install/pioasm/pioasmConfigVersion.cmake

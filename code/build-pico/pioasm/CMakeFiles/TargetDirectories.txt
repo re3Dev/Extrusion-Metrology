@@ -1,0 +1,7 @@
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/pioasm.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/edit_cache.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/rebuild_cache.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/list_install_components.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/install.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/install/local.dir
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/pioasm/CMakeFiles/install/strip.dir

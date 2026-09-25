@@ -1,0 +1,7 @@
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/picotool.exe
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/picotoolTargets.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/picotoolTargets-release.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/picotoolConfig.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/picotoolConfigVersion.cmake
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/enc_bootloader.elf
+C:/Users/info/Documents/Extrusion-Metrology/code/build-pico/_deps/picotool/enc_bootloader_mbedtls.elf

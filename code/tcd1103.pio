@@ -1,0 +1,115 @@
+.program tcd1103
+
+; ------------------------------------------------------------
+; BeadSense / TCD1103 timing
+;
+; SET pin mapping:
+;   bit 0 = GP2 = PHIM
+;   bit 1 = GP3 = ICG
+;   bit 2 = GP4 = SH
+;
+; State values:
+;
+;   0b011 = PHIM=1, ICG=1, SH=0
+;   0b001 = PHIM=1, ICG=0, SH=0
+;   0b101 = PHIM=1, ICG=0, SH=1
+;   0b010 = PHIM=0, ICG=1, SH=0
+;
+; PIO frequency will be 4 MHz:
+;   1 instruction cycle = 250 ns
+;
+; PHIM:
+;   5 PIO cycles LOW
+;   5 PIO cycles HIGH
+;
+; Therefore:
+;   PHIM = 400 kHz
+;
+; Two PHIM periods per CCD output period:
+;   pixel/output rate = 200 kHz
+;
+; X is loaded by the CPU with 1545,
+; producing 1546 output periods.
+; ------------------------------------------------------------
+
+
+.wrap_target
+
+; ------------------------------------------------------------
+; Transfer sequence
+; ------------------------------------------------------------
+
+; Normal idle:
+; PHIM high
+; ICG high
+; SH low
+
+set pins, 0b011
+
+
+; ICG LOW while PHIM remains HIGH
+set pins, 0b001
+
+
+; Small delay before SH
+nop
+nop
+
+
+; SH HIGH
+set pins, 0b101 [7]
+
+
+; SH LOW
+set pins, 0b001 [3]
+
+
+; ICG HIGH while PHIM is HIGH
+set pins, 0b011 [3]
+
+
+; ------------------------------------------------------------
+; Get number of CCD output periods from TX FIFO
+; CPU sends 1545
+; ------------------------------------------------------------
+
+pull block
+mov x, osr
+
+
+; ------------------------------------------------------------
+; Clock output periods
+;
+; Each loop generates:
+;
+; PHIM low  -> high
+; PHIM low  -> high
+;
+; = two PHIM clocks
+; = one TCD1103 output period
+;
+; Each SET consumes one cycle + [4] delay:
+; 5 cycles * 250 ns = 1.25 us
+;
+; One PHIM cycle:
+; 2.5 us = 400 kHz
+;
+; One CCD output period:
+; 5 us = 200 kHz
+; ------------------------------------------------------------
+
+pixel_loop:
+
+set pins, 0b010 [4]
+set pins, 0b011 [4]
+
+set pins, 0b010 [4]
+set pins, 0b011 [4]
+
+jmp x-- pixel_loop
+
+
+; Hold normal idle state momentarily
+set pins, 0b011 [3]
+
+.wrap
